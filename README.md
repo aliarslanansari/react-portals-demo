@@ -57,7 +57,7 @@ export default App
 `App.js` is a simple Component that just renders a `<h1> ` tag and the `<Modal/>` component we just created.
 now if we run the code we will get the following output on the browser.
 
-![React App.png](readme-assets\React-App.png)
+![React App.png](https://raw.githubusercontent.com/aliarslanansari/react-portals-demo/master/readme-assets/React-App.png)
 
 Let's inspect the code in the browser dev tool,
 
