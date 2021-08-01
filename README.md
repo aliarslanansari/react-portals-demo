@@ -57,13 +57,13 @@ export default App
 `App.js` is a simple Component that just renders a `<h1> ` tag and the `<Modal/>` component we just created.
 now if we run the code we will get the following output on the browser.
 
-<center>![React App.png](./readme-assets\React-App.png)</center>
+![React App.png](readme-assets\React-App.png)
 
 Let's inspect the code in the browser dev tool,
 
-<center>![React Portal dev tool 1.PNG](https://cdn.hashnode.com/res/hashnode/image/upload/v1627847907655/V6TErqaK2.png)</center>
-Here, we can see the Modal Portal is rendered inside the root node, and the ```portal-root``` node we created is empty and has no child element.
-Now to render the Modal component inside the ```portal-root```let's use React Portals.
+![React Portal dev tool 1.PNG](https://cdn.hashnode.com/res/hashnode/image/upload/v1627847907655/V6TErqaK2.png)
+Here, we can see the Modal Portal is rendered inside the root node, and the `portal-root` node we created is empty and has no child element.
+Now to render the Modal component inside the `portal-root`let's use React Portals.
 
 Update the code in `modal.js` file with the following code.
 
@@ -81,7 +81,7 @@ In the above code we've accessed the `portal-root` DOM node using element Id and
 
 Now lets inspect the code again,
 
-<center>![React Portal dev tool 2.PNG](https://cdn.hashnode.com/res/hashnode/image/upload/v1627849082497/d_MblB8xhv.png)</center>
+![React Portal dev tool 2.PNG](https://cdn.hashnode.com/res/hashnode/image/upload/v1627849082497/d_MblB8xhv.png)
 
 Here, you can see that "Modal Portal" is rendered inside the portal-root node.
 `root` node consists of only the "Hello World" header tag, even if we're rendering the `<Modal/>` in App component.
@@ -137,7 +137,7 @@ export default App
 
 In the above code, we've added a button to toggle the state of modal and conditionally rendered the `<Modal/>` component, which produces the following output.
 
-<center>![CPT2108020208-404x167.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1627850722590/uFSOmf49K.gif)<center>
+![CPT2108020208-404x167.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1627850722590/uFSOmf49K.gif)
 
 This demonstrates that we can control the components rendered outside of the main root node from inside the root node and the component rendered using the portal can access states of the root node.
 
